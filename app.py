@@ -12,7 +12,7 @@ from sklearn.metrics import precision_score, recall_score
 def main():
 	st.title("Binary Classification App Made By Kaushik Bhide TCOD62")
 	st.sidebar.title("Binary Classifcation App")
-	st.markdown("Are Mushrooms Poisonous or Edible?🍄")
+	st.markdown("Are Mushrooms Poisonous or Edible?🍄 Right Click to See Options")
 	st.sidebar.markdown("Are Mushrooms Poisonous or Edible?🍄")
 	@st.cache(persist=True)
 	def load_data():
@@ -114,7 +114,7 @@ def main():
 
 
 
-	if st.sidebar.checkbox("Show Raw Data", False):
+	if st.sidebar.checkbox("Show Raw Data", True):
 		st.subheader("Mushroom Data Set(Classifcation)")
 		st.write(df)
 
